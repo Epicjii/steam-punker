@@ -11,6 +11,7 @@ showAsResourcePack=false
 modId="steampunker"
 version="${file.jarVersion}"
 displayName="Steampunker"
+updateJSONURL="https://raw.githubusercontent.com/Epicjii/steam-punker/main/Current_Version.json"
 displayURL="https://github.com/Epicjii/steam-punker"
 authors="Epicjii"
 description='''
