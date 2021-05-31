@@ -1,0 +1,32 @@
+#
+modloader="javafml"
+#accepted forge versions
+loaderVersion="[36,)"
+#Where to send issues
+issueTrackerURL="https://github.com/Epicjii/steam-punker/issues"
+
+showAsResourcePack=false
+
+[[mods]]
+modId="steampunker"
+version="${file.jarVersion}"
+displayName="Steampunker"
+displayURL="https://github.com/Epicjii/steam-punker"
+authors="Epicjii"
+description='''
+This mod lets you harness the power of steam to conquer the world.
+'''
+
+[[dependencies.steampunker]]
+modId="forge"
+mandatory=true
+versionRange="[36,)"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.steampunker]]
+modId="minecraft"
+mandatory=true
+versionRange="[1.16,)"
+ordering="NONE"
+side="BOTH"
