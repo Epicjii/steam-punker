@@ -1,17 +1,17 @@
-#
-modloader="javafml"
+#what loader the mod uses
+modLoader="javafml"
 #accepted forge versions
 loaderVersion="[36,)"
 #Where to send issues
 issueTrackerURL="https://github.com/Epicjii/steam-punker/issues"
-
 showAsResourcePack=false
+license="GNU GPLv3"
 
 [[mods]]
 modId="steampunker"
 version="${file.jarVersion}"
 displayName="Steampunker"
-updateJSONURL="https://raw.githubusercontent.com/Epicjii/steam-punker/main/Current_Version.json"
+updateJSONURL="https://raw.githubusercontent.com/Epicjii/steam-punker/main/update.json"
 displayURL="https://github.com/Epicjii/steam-punker"
 authors="Epicjii"
 description='''
