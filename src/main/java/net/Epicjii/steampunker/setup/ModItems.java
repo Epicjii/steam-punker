@@ -8,6 +8,9 @@ public class ModItems {
     public static final RegistryObject<Item> WRENCH = Registration.ITEMS.register("wrench", () ->
             new Item(new Item.Properties().setNoRepair().tab(ItemGroup.TAB_TOOLS)));
 
+    public static final RegistryObject<Item> STEEL_INGOT = Registration.ITEMS.register("steel_ingot", () ->
+            new Item(new Item.Properties().tab(ItemGroup.TAB_MATERIALS)));
+
     static void register() {
     }
 }
