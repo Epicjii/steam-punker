@@ -13,10 +13,10 @@ import java.util.function.Supplier;
 
 public class ModBlocks {
     public static final RegistryObject<Block> STEEL_BLOCK = registerBuildingBlockItem("block_of_steel", () ->
-            new Block(AbstractBlock.Properties.of(Material.METAL).sound(SoundType.METAL).strength(6,1200)));
+            new Block(AbstractBlock.Properties.create(Material.IRON).sound(SoundType.METAL).hardnessAndResistance(6.0f,1200.0f)));
 
     public static final RegistryObject<Block> PIPE = registerBlock("pipe",() ->
-            new Block(AbstractBlock.Properties.of(Material.METAL).sound(SoundType.METAL).instabreak().noDrops()));
+            new Block(AbstractBlock.Properties.create(Material.IRON).sound(SoundType.METAL).noDrops().zeroHardnessAndResistance()));
 
     static void register() {
     }
@@ -31,7 +31,7 @@ public class ModBlocks {
         RegistryObject<Type_Block> reg_Block = registerBlock(name, block);
         Registration.ITEMS.register(
                 name,
-                () -> new BlockItem(reg_Block.get(), new Item.Properties().tab(ItemGroup.TAB_MISC))
+                () -> new BlockItem(reg_Block.get(), new Item.Properties().group(ItemGroup.MISC))
         );
         return reg_Block;
     }
@@ -41,7 +41,7 @@ public class ModBlocks {
         RegistryObject<Type_Block> reg_Block = registerBlock(name, block);
         Registration.ITEMS.register(
                 name,
-                () -> new BlockItem(reg_Block.get(), new Item.Properties().tab(ItemGroup.TAB_BUILDING_BLOCKS))
+                () -> new BlockItem(reg_Block.get(), new Item.Properties().group(ItemGroup.BUILDING_BLOCKS))
         );
         return reg_Block;
     }
