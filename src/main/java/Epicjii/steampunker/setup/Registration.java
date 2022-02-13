@@ -25,7 +25,7 @@ public class Registration {
     private static final DeferredRegister<Fluid> FLUIDS = DeferredRegister.create(ForgeRegistries.FLUIDS, MODID);
 
     //blocks
-    public static final RegistryObject<Block> Pump = BLOCKS.register("water_pump", () -> new Block(BLOCK_PROPERTIES));
+    public static final RegistryObject<Block> Pump = BLOCKS.register("pump", () -> new Block(BLOCK_PROPERTIES));
     public static final RegistryObject<Block> Boiler = BLOCKS.register("boiler", () -> new Block(BLOCK_PROPERTIES));
     public static final RegistryObject<Block> Pipe = BLOCKS.register("pipe", () -> new Block(BLOCK_PROPERTIES));
 
